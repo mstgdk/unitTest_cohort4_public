@@ -1,3 +1,5 @@
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -17,7 +19,7 @@ public class Test01_Assertions {
         assertEquals(actual,expected);
     }
 
-    @Test
+    @RepeatedTest(3)
     void testUpperCase(){
         String actual = "Hello".toUpperCase();
         String expected = "HELLO";

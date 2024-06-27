@@ -18,8 +18,8 @@ public class Test02_Assertions2 {
         String[] actualArray = str.split(" ");
         String[] expectedArray = {"Junit","patika","dev","a"};
 
-        //assertTrue(Arrays.equals(actualArray,expectedArray));
-         assertFalse(Arrays.equals(actualArray,expectedArray));
+        assertTrue(Arrays.equals(actualArray,expectedArray));
+         //assertFalse(Arrays.equals(actualArray,expectedArray));
     }
 
 }
